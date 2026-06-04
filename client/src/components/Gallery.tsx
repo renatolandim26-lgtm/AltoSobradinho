@@ -55,9 +55,14 @@ export default function Gallery() {
                 alt={item.title}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
-              {/* Overlay with Title */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                <h3 className="text-white font-bold text-lg">{item.title}</h3>
+              {/* Overlay with Title and Description */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-6 translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                <h3 className="text-white font-bold text-lg mb-1">{item.title}</h3>
+                {item.description && (
+                  <p className="text-white/90 text-xs leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    {item.description}
+                  </p>
+                )}
               </div>
             </div>
           ))}

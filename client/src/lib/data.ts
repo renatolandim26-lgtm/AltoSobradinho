@@ -115,16 +115,19 @@ export const condominiumData = {
     ],
     plantas: [
       {
-        title: "2 Quartos",
-        image: "/images/planta-2-quartos.jpg"
-      },
-      {
-        title: "3 Quartos",
+        title: "3 Quartos com Varanda (72,83m²)",
+        description: "Apartamento tipo com suíte, varanda gourmet, piso laminado nos quartos e porcelanato nas áreas úmidas. Conta com diferenciais como tomada USB na suíte/sala e fechadura eletrônica.",
         image: "/images/planta-3-quartos.jpg"
       },
       {
-        title: "Cobertura",
-        image: "/images/planta-cobertura.jpg"
+        title: "3 Quartos Garden (72,83m² + Área Privativa)",
+        description: "Exclusividade de um quintal privativo. Planta com suíte, varanda e amplo espaço descoberto, ideal para quem busca o conforto de uma casa com a segurança de um apartamento.",
+        image: "/images/planta-garden.jpg"
+      },
+      {
+        title: "Diferenciais Técnicos",
+        description: "Previsão para ar-condicionado, bancadas em granito, torneiras com arejador, vasos sanitários com dual flush e áreas técnicas com fechamento em brise.",
+        image: "/images/fachada-render.jpg"
       }
     ],
     empreendimento: [
