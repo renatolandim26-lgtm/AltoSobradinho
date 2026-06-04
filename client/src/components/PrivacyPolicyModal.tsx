@@ -39,7 +39,7 @@ export default function PrivacyPolicyModal({ isOpen, onClose }: PrivacyPolicyMod
         {/* Content */}
         <div className="p-6 text-foreground/80 space-y-6">
           <p className="text-sm text-foreground/60">
-            Esta Política de Privacidade descreve como a Solidus Alto Sobradinho coleta, usa, armazena e protege as informações pessoais dos usuários que interagem com nosso website e serviços. Nosso compromisso é garantir a privacidade e a segurança dos seus dados, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 - LGPD).
+            Esta Política de Privacidade descreve como a Riva Incorporadora coleta, usa, armazena e protege as informações pessoais dos usuários que interagem com nosso website e serviços. Nosso compromisso é garantir a privacidade e a segurança dos seus dados, em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018 - LGPD).
           </p>
 
           <section>
@@ -67,7 +67,7 @@ export default function PrivacyPolicyModal({ isOpen, onClose }: PrivacyPolicyMod
           <section>
             <h3 className="text-lg font-semibold text-foreground mb-3">3. Compartilhamento de Dados</h3>
             <p className="text-sm leading-relaxed">
-              A Solidus Alto Sobradinho não vende, aluga ou compartilha suas informações pessoais com terceiros para fins de marketing sem o seu consentimento explícito. Seus dados podem ser compartilhados apenas em situações específicas e necessárias, tais como: com nossos consultores imobiliários para que realizem o atendimento personalizado, ou em cumprimento a ordens judiciais ou requisições de autoridades competentes.
+              A Riva Incorporadora não vende, aluga ou compartilha suas informações pessoais com terceiros para fins de marketing sem o seu consentimento explícito. Seus dados podem ser compartilhados apenas em situações específicas e necessárias, tais como: com nossos consultores imobiliários para que realizem o atendimento personalizado, ou em cumprimento a ordens judiciais ou requisições de autoridades competentes.
             </p>
           </section>
 

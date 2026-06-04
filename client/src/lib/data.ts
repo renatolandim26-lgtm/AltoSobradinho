@@ -44,53 +44,53 @@ export const condominiumData = {
     fachada: [
       {
         title: "Fachada Principal",
-        image: "/images/1000041387.jpg"
+        image: "/images/fachada-principal.jpg"
       },
       {
         title: "Vista das Torres",
-        image: "/images/1000053031.jpg"
+        image: "/images/fachada-vista-torres.jpg"
       },
       {
         title: "Portaria e Segurança",
-        image: "/images/1000053035.jpg"
+        image: "/images/fachada-portaria.jpg"
       },
       {
         title: "Perspectiva Frontal",
-        image: "/images/1000040610.jpg"
+        image: "/images/fachada-perspectiva-frontal.jpg"
       },
       {
         title: "Fachada Lateral",
-        image: "/images/1000040612.jpg"
+        image: "/images/fachada-lateral.jpg"
       },
       {
-        title: "Empreendimento",
-        image: "/images/1000044025.jpg"
+        title: "Render 3D",
+        image: "/images/fachada-render.jpg"
       }
     ],
     enxoval: [
       {
         title: "Quadra Poliesportiva",
-        image: "/images/1000053017.jpg"
+        image: "/images/lazer-quadra-poliesportiva.jpg"
       },
       {
         title: "Playground Infantil",
-        image: "/images/1000053039.jpg"
+        image: "/images/lazer-playground.jpg"
       },
       {
         title: "Pet Place",
-        image: "/images/1000053043.jpg"
+        image: "/images/lazer-pet-place.jpg"
       },
       {
         title: "Academia",
-        image: "/images/1000053041.jpg"
+        image: "/images/lazer-academia.jpg"
       },
       {
         title: "Área de Lazer",
-        image: "/images/1000040604.jpg"
+        image: "/images/lazer-area-comum.jpg"
       },
       {
         title: "Espaço Gourmet",
-        image: "/images/1000040616.jpg"
+        image: "/images/lazer-espaco-gourmet.jpg"
       }
     ],
     plantas: [
@@ -110,19 +110,19 @@ export const condominiumData = {
     empreendimento: [
       {
         title: "Perspectiva Aérea",
-        image: "/images/1000051030.jpg"
+        image: "/images/empreendimento-perspectiva-aerea.jpg"
       },
       {
         title: "Vista Geral",
-        image: "/images/1000051032.jpg"
+        image: "/images/empreendimento-vista-geral.jpg"
       },
       {
         title: "Render 3D",
-        image: "/images/1000053027.jpg"
+        image: "/images/empreendimento-render-3d.jpg"
       },
       {
         title: "Perspectiva do Condomínio",
-        image: "/images/1000053029.jpg"
+        image: "/images/empreendimento-perspectiva-condominio.jpg"
       }
     ]
   },
@@ -134,7 +134,7 @@ export const condominiumData = {
       developer: "Apartamentos 2 e 3 Quartos",
       bedrooms: "2 e 3 Quartos",
       status: "Em Construção",
-      image: "/images/1000041387.jpg"
+      image: "/images/fachada-principal.jpg"
     }
   ],
   contact: {
@@ -144,7 +144,7 @@ export const condominiumData = {
         role: "Consultor Imobiliário",
         phone: "5561999886578",
         formattedPhone: "(61) 9 9988-6578",
-        image: "/images/1000053966.jpg",
+        image: "/images/consultor-renato-landim.jpg",
         defaultMessage: "Olá Renato! Gostaria de saber mais sobre o Alto Sobradinho."
       }
     ],

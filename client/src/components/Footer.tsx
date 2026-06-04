@@ -1,5 +1,5 @@
 import { Instagram, Facebook, MapPin, Phone } from "lucide-react";
-import logoSolidusNew from "@/assets/logo-solidus.png";
+// Logo removido - Solidus
 import { condominiumData } from "@/lib/data";
 
 export default function Footer() {
@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Sobre Nós */}
           <div className="md:block hidden">
-            <h4 className="font-bold mb-4">Solidus Empreendimentos</h4>
+            <h4 className="font-bold mb-4">Riva Incorporadora</h4>
             <p className="text-sm text-sidebar-foreground/80 leading-relaxed">
               Especialistas em imóveis com conforto, localização privilegiada e alto potencial de valorização.
             </p>
@@ -47,22 +47,22 @@ export default function Footer() {
             <h4 className="font-bold mb-4">Redes Sociais</h4>
             <div className="space-y-3">
               <a
-                href="https://instagram.com/solidusempreendimentos"
+                href="https://instagram.com/rivaincorporadora"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sidebar-foreground/80 hover:text-white transition-colors"
               >
                 <Instagram size={20} />
-                @solidusempreendimentos
+                @rivaincorporadora
               </a>
               <a
-                href="https://www.facebook.com/share/17tySGHbdD/"
+                href="https://www.facebook.com/rivaincorporadora"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sidebar-foreground/80 hover:text-white transition-colors"
               >
                 <Facebook size={20} />
-                Solidus Imóveis DF
+                Riva Incorporadora
               </a>
             </div>
           </div>
@@ -91,13 +91,8 @@ export default function Footer() {
         <div className="border-t border-sidebar-foreground/20 pt-8">
           <div className="flex items-center justify-between">
             <p className="text-sm text-sidebar-foreground/60">
-              © 2026 Solidus Empreendimentos — Todos os direitos reservados.
+              © 2026 Riva Incorporadora — Todos os direitos reservados.
             </p>
-            <img 
-              src={logoSolidusNew} 
-              alt="Solidus" 
-              className="h-12 w-12 sm:h-14 sm:w-14 object-contain opacity-80 hover:opacity-100 transition-opacity"
-            />
           </div>
         </div>
       </div>
