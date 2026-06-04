@@ -91,6 +91,26 @@ export const condominiumData = {
       {
         title: "Espaço Gourmet",
         image: "/images/lazer-espaco-gourmet.jpg"
+      },
+      {
+        title: "Salão de Jogos",
+        image: "/images/1000041386.jpg"
+      },
+      {
+        title: "Brinquedoteca",
+        image: "/images/1000041388.jpg"
+      },
+      {
+        title: "Piscina Adulto",
+        image: "/images/1000040602.jpg"
+      },
+      {
+        title: "Deck Molhado",
+        image: "/images/1000053023.jpg"
+      },
+      {
+        title: "Espaço Convivência",
+        image: "/images/1000053041.jpg"
       }
     ],
     plantas: [
@@ -126,17 +146,7 @@ export const condominiumData = {
       }
     ]
   },
-  otherDevelopments: [
-    {
-      id: 1,
-      name: "Alto Sobradinho",
-      location: "Sobradinho, DF",
-      developer: "Apartamentos 2 e 3 Quartos",
-      bedrooms: "2 e 3 Quartos",
-      status: "Em Construção",
-      image: "/images/fachada-principal.jpg"
-    }
-  ],
+  otherDevelopments: [],
   contact: {
     consultants: [
       {

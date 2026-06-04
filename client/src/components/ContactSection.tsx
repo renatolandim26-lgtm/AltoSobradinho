@@ -1,5 +1,6 @@
 import { Phone, MessageCircle } from "lucide-react";
 import { useState } from "react";
+import PrivacyPolicyModal from "./PrivacyPolicyModal";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -18,6 +19,7 @@ export default function ContactSection() {
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isPolicyModalOpen, setIsPolicyModalOpen] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -159,7 +161,15 @@ export default function ContactSection() {
 
                 <div className="flex items-start gap-2 py-2">
                   <p className="text-[10px] text-muted-foreground leading-tight">
-                    Ao enviar, você concorda com nossa Política de Privacidade e está ciente de que seus dados de contato serão compartilhados com o consultor Renato Landim e a imobiliária para fins de atendimento personalizado.
+                    Ao enviar, você concorda com nossa{" "}
+                    <button 
+                      type="button"
+                      onClick={() => setIsPolicyModalOpen(true)}
+                      className="text-primary underline hover:text-primary/80"
+                    >
+                      Política de Privacidade
+                    </button>{" "}
+                    e está ciente de que seus dados de contato serão compartilhados com o consultor Renato Landim e a imobiliária para fins de atendimento personalizado.
                   </p>
                 </div>
 
@@ -168,8 +178,13 @@ export default function ContactSection() {
                   disabled={isSubmitting}
                   className="w-full h-12 bg-primary hover:bg-primary/90 text-white font-bold rounded-lg transition-all"
                 >
-                  {isSubmitting ? "Enviando..." : "Solicitar Simulação"}
+                  {isSubmitting ? "Enviando..." : "Solicitar informações direto com consultor"}
                 </Button>
+
+                <PrivacyPolicyModal 
+                  isOpen={isPolicyModalOpen} 
+                  onClose={() => setIsPolicyModalOpen(false)} 
+                />
               </form>
             </div>
           </div>
