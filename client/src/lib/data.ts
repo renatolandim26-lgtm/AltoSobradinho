@@ -115,34 +115,14 @@ export const condominiumData = {
     ],
     plantas: [
       {
-        title: "2 Quartos com Varanda (59,86m²)",
+        title: "Planta 2 Quartos com Varanda (59,86m²)",
         description: "Apartamento inteligente com suíte, varanda, piso laminado nos quartos e porcelanato nos banheiros, sala e cozinha. Equipado com tomada USB e fechadura eletrônica.",
         image: "/images/planta-2-quartos-tipo.jpg"
       },
       {
-        title: "2 Quartos Garden (59,86m² + Quintal)",
-        description: "A liberdade de uma casa com a segurança de um prédio. Apartamento térreo com suíte, varanda e área privativa descoberta para momentos de lazer em família.",
-        image: "/images/planta-2-quartos-garden.jpg"
-      },
-      {
-        title: "3 Quartos com Varanda (72,83m²)",
+        title: "Planta 3 Quartos com Varanda (72,83m²)",
         description: "Espaço e conforto para sua família. Planta com suíte, varanda gourmet, acabamento premium e tecnologia integrada com tomadas USB e fechadura eletrônica.",
         image: "/images/planta-3-quartos-tipo.jpg"
-      },
-      {
-        title: "3 Quartos Garden (72,83m² + Quintal)",
-        description: "O maior espaço privativo do complexo. Apartamento garden com 3 quartos, suíte e uma generosa área externa privativa para o seu lazer.",
-        image: "/images/planta-3-quartos-garden.jpg"
-      },
-      {
-        title: "Diferenciais de Tecnologia",
-        description: "Fechadura eletrônica na porta de entrada, tomada USB na sala e suíte, e previsão de infraestrutura completa para ar-condicionado em todos os quartos.",
-        image: "/images/fachada-render.jpg"
-      },
-      {
-        title: "Acabamentos Premium",
-        description: "Piso laminado nos quartos para maior conforto térmico e porcelanato nas áreas sociais e úmidas. Bancadas em granito e metais com arejador para economia de água.",
-        image: "/images/lazer-espaco-gourmet.jpg"
       }
     ],
     empreendimento: [
