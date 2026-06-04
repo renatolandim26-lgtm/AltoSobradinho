@@ -42,30 +42,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Redes Sociais */}
-          <div>
-            <h4 className="font-bold mb-4">Redes Sociais</h4>
-            <div className="space-y-3">
-              <a
-                href="https://instagram.com/rivaincorporadora"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sidebar-foreground/80 hover:text-white transition-colors"
-              >
-                <Instagram size={20} />
-                @rivaincorporadora
-              </a>
-              <a
-                href="https://www.facebook.com/rivaincorporadora"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sidebar-foreground/80 hover:text-white transition-colors"
-              >
-                <Facebook size={20} />
-                Riva Incorporadora
-              </a>
-            </div>
-          </div>
+          {/* Redes Sociais Removidas */}
 
           {/* Links Rápidos */}
           <div>
@@ -91,7 +68,7 @@ export default function Footer() {
         <div className="border-t border-sidebar-foreground/20 pt-8">
           <div className="flex items-center justify-between">
             <p className="text-sm text-sidebar-foreground/60">
-              © 2026 Riva Incorporadora — Todos os direitos reservados.
+              © 2026 Renato Landim — Todos os direitos reservados.
             </p>
           </div>
         </div>

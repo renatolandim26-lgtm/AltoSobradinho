@@ -82,7 +82,7 @@ export const condominiumData = {
       },
       {
         title: "Academia",
-        image: "/images/lazer-academia.jpg"
+        image: "/images/lazer-academia-interna.jpg"
       },
       {
         title: "Área de Lazer",
@@ -144,7 +144,7 @@ export const condominiumData = {
         role: "Consultor Imobiliário",
         phone: "5561999886578",
         formattedPhone: "(61) 9 9988-6578",
-        image: "/images/consultor-renato-landim.jpg",
+        image: "/images/consultor-rosto.jpg",
         defaultMessage: "Olá Renato! Gostaria de saber mais sobre o Alto Sobradinho."
       }
     ],

@@ -157,6 +157,12 @@ export default function ContactSection() {
                   </Select>
                 </div>
 
+                <div className="flex items-start gap-2 py-2">
+                  <p className="text-[10px] text-muted-foreground leading-tight">
+                    Ao enviar, você concorda com nossa Política de Privacidade e está ciente de que seus dados de contato serão compartilhados com o consultor Renato Landim e a imobiliária para fins de atendimento personalizado.
+                  </p>
+                </div>
+
                 <Button
                   type="submit"
                   disabled={isSubmitting}
