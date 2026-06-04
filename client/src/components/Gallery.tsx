@@ -10,7 +10,6 @@ export default function Gallery() {
   const categories: { key: GalleryCategory; label: string }[] = [
     { key: "fachada", label: "Fachada" },
     { key: "enxoval", label: "Enxoval" },
-    { key: "plantas", label: "Plantas" },
     { key: "empreendimento", label: "Empreendimento" }
   ];
 
