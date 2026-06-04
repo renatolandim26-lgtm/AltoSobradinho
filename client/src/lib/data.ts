@@ -115,19 +115,34 @@ export const condominiumData = {
     ],
     plantas: [
       {
+        title: "2 Quartos com Varanda (59,86m²)",
+        description: "Apartamento inteligente com suíte, varanda, piso laminado nos quartos e porcelanato nos banheiros, sala e cozinha. Equipado com tomada USB e fechadura eletrônica.",
+        image: "/images/planta-2-quartos.jpg"
+      },
+      {
+        title: "2 Quartos Garden (59,86m² + Quintal)",
+        description: "A liberdade de uma casa com a segurança de um prédio. Apartamento térreo com suíte, varanda e área privativa descoberta para momentos de lazer em família.",
+        image: "/images/planta-2-quartos-garden.jpg"
+      },
+      {
         title: "3 Quartos com Varanda (72,83m²)",
-        description: "Apartamento tipo com suíte, varanda gourmet, piso laminado nos quartos e porcelanato nas áreas úmidas. Conta com diferenciais como tomada USB na suíte/sala e fechadura eletrônica.",
+        description: "Espaço e conforto para sua família. Planta com suíte, varanda gourmet, acabamento premium e tecnologia integrada com tomadas USB e fechadura eletrônica.",
         image: "/images/planta-3-quartos.jpg"
       },
       {
-        title: "3 Quartos Garden (72,83m² + Área Privativa)",
-        description: "Exclusividade de um quintal privativo. Planta com suíte, varanda e amplo espaço descoberto, ideal para quem busca o conforto de uma casa com a segurança de um apartamento.",
+        title: "3 Quartos Garden (72,83m² + Quintal)",
+        description: "O maior espaço privativo do complexo. Apartamento garden com 3 quartos, suíte e uma generosa área externa privativa para o seu lazer.",
         image: "/images/planta-garden.jpg"
       },
       {
-        title: "Diferenciais Técnicos",
-        description: "Previsão para ar-condicionado, bancadas em granito, torneiras com arejador, vasos sanitários com dual flush e áreas técnicas com fechamento em brise.",
+        title: "Diferenciais de Tecnologia",
+        description: "Fechadura eletrônica na porta de entrada, tomada USB na sala e suíte, e previsão de infraestrutura completa para ar-condicionado em todos os quartos.",
         image: "/images/fachada-render.jpg"
+      },
+      {
+        title: "Acabamentos Premium",
+        description: "Piso laminado nos quartos para maior conforto térmico e porcelanato nas áreas sociais e úmidas. Bancadas em granito e metais com arejador para economia de água.",
+        image: "/images/lazer-espaco-gourmet.jpg"
       }
     ],
     empreendimento: [
