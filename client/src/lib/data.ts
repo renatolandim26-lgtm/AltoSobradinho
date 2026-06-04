@@ -43,8 +43,8 @@ export const condominiumData = {
   gallery: {
     fachada: [
       {
-        title: "Fachada Noturna",
-        image: "/images/1000051028.jpg"
+        title: "Fachada Principal",
+        image: "/images/1000041387.jpg"
       },
       {
         title: "Vista das Torres",
@@ -53,15 +53,27 @@ export const condominiumData = {
       {
         title: "Portaria e Segurança",
         image: "/images/1000053035.jpg"
+      },
+      {
+        title: "Perspectiva Frontal",
+        image: "/images/1000040610.jpg"
+      },
+      {
+        title: "Fachada Lateral",
+        image: "/images/1000040612.jpg"
+      },
+      {
+        title: "Empreendimento",
+        image: "/images/1000044025.jpg"
       }
     ],
     enxoval: [
       {
-        title: "Piscina",
-        image: "/images/1000053007.jpg"
+        title: "Quadra Poliesportiva",
+        image: "/images/1000053017.jpg"
       },
       {
-        title: "Playground",
+        title: "Playground Infantil",
         image: "/images/1000053039.jpg"
       },
       {
@@ -71,6 +83,14 @@ export const condominiumData = {
       {
         title: "Academia",
         image: "/images/1000053041.jpg"
+      },
+      {
+        title: "Área de Lazer",
+        image: "/images/1000040604.jpg"
+      },
+      {
+        title: "Espaço Gourmet",
+        image: "/images/1000040616.jpg"
       }
     ],
     plantas: [
@@ -89,15 +109,34 @@ export const condominiumData = {
     ],
     empreendimento: [
       {
-        title: "Obra Acelerada",
-        image: "/images/1000044184.jpg"
+        title: "Perspectiva Aérea",
+        image: "/images/1000051030.jpg"
       },
       {
-        title: "Perspectiva Aérea",
-        image: "/images/1000053037.jpg"
+        title: "Vista Geral",
+        image: "/images/1000051032.jpg"
+      },
+      {
+        title: "Render 3D",
+        image: "/images/1000053027.jpg"
+      },
+      {
+        title: "Perspectiva do Condomínio",
+        image: "/images/1000053029.jpg"
       }
     ]
   },
+  otherDevelopments: [
+    {
+      id: 1,
+      name: "Alto Sobradinho",
+      location: "Sobradinho, DF",
+      developer: "Apartamentos 2 e 3 Quartos",
+      bedrooms: "2 e 3 Quartos",
+      status: "Em Construção",
+      image: "/images/1000041387.jpg"
+    }
+  ],
   contact: {
     consultants: [
       {
@@ -105,7 +144,7 @@ export const condominiumData = {
         role: "Consultor Imobiliário",
         phone: "5561999886578",
         formattedPhone: "(61) 9 9988-6578",
-        image: "/images/renato-landim.png",
+        image: "/images/1000053966.jpg",
         defaultMessage: "Olá Renato! Gostaria de saber mais sobre o Alto Sobradinho."
       }
     ],
