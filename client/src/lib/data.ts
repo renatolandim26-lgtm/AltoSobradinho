@@ -117,7 +117,7 @@ export const condominiumData = {
       {
         title: "2 Quartos com Varanda (59,86m²)",
         description: "Apartamento inteligente com suíte, varanda, piso laminado nos quartos e porcelanato nos banheiros, sala e cozinha. Equipado com tomada USB e fechadura eletrônica.",
-        image: "/images/planta-2-quartos.jpg"
+        image: "/images/planta-2-quartos-tipo.jpg"
       },
       {
         title: "2 Quartos Garden (59,86m² + Quintal)",
@@ -127,12 +127,12 @@ export const condominiumData = {
       {
         title: "3 Quartos com Varanda (72,83m²)",
         description: "Espaço e conforto para sua família. Planta com suíte, varanda gourmet, acabamento premium e tecnologia integrada com tomadas USB e fechadura eletrônica.",
-        image: "/images/planta-3-quartos.jpg"
+        image: "/images/planta-3-quartos-tipo.jpg"
       },
       {
         title: "3 Quartos Garden (72,83m² + Quintal)",
         description: "O maior espaço privativo do complexo. Apartamento garden com 3 quartos, suíte e uma generosa área externa privativa para o seu lazer.",
-        image: "/images/planta-garden.jpg"
+        image: "/images/planta-3-quartos-garden.jpg"
       },
       {
         title: "Diferenciais de Tecnologia",
