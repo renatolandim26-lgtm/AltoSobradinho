@@ -69,24 +69,16 @@ export const condominiumData = {
     ],
     enxoval: [
       {
-        title: "Quadra Poliesportiva",
-        image: "/images/lazer-quadra-poliesportiva.jpg"
+        title: "Piscina Adulto",
+        image: "/images/1000040602.jpg"
       },
       {
-        title: "Playground Infantil",
-        image: "/images/lazer-playground.jpg"
+        title: "Deck Molhado e Solarium",
+        image: "/images/1000053023.jpg"
       },
       {
-        title: "Pet Place",
-        image: "/images/lazer-pet-place.jpg"
-      },
-      {
-        title: "Academia",
+        title: "Academia Equipada",
         image: "/images/lazer-academia-interna.jpg"
-      },
-      {
-        title: "Área de Lazer",
-        image: "/images/lazer-area-comum.jpg"
       },
       {
         title: "Espaço Gourmet",
@@ -97,19 +89,27 @@ export const condominiumData = {
         image: "/images/1000041386.jpg"
       },
       {
+        title: "Quadra Poliesportiva",
+        image: "/images/lazer-quadra-poliesportiva.jpg"
+      },
+      {
+        title: "Playground",
+        image: "/images/lazer-playground.jpg"
+      },
+      {
+        title: "Pet Place",
+        image: "/images/lazer-pet-place.jpg"
+      },
+      {
         title: "Brinquedoteca",
         image: "/images/1000041388.jpg"
       },
       {
-        title: "Piscina Adulto",
-        image: "/images/1000040602.jpg"
+        title: "Espaço de Convivência",
+        image: "/images/lazer-area-comum.jpg"
       },
       {
-        title: "Deck Molhado",
-        image: "/images/1000053023.jpg"
-      },
-      {
-        title: "Espaço Convivência",
+        title: "Academia ao Ar Livre",
         image: "/images/1000053041.jpg"
       }
     ],
