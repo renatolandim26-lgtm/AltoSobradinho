@@ -55,21 +55,19 @@ export default function Hero() {
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#contato"
               className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-white px-8 py-4 text-base font-extrabold text-primary shadow-xl transition-all hover:-translate-y-0.5 hover:bg-blue-50 hover:shadow-2xl active:scale-95 sm:w-auto"
             >
               <MessageCircle size={22} />
-              Receber condições no WhatsApp
+              Solicitar Simulação Gratuita
             </a>
 
             <a
-              href="#plantas"
+              href="#galeria"
               className="inline-flex w-full items-center justify-center gap-3 rounded-full border border-white/35 bg-white/10 px-8 py-4 text-base font-bold text-white backdrop-blur transition-all hover:bg-white/20 active:scale-95 sm:w-auto"
             >
               <CalendarCheck size={22} />
-              Ver plantas
+              Ver Galeria
             </a>
           </div>
 
