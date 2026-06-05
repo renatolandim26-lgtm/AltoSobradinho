@@ -8,15 +8,18 @@ export const condominiumData = {
     amenities: [
       {
         title: "Lazer de Resort",
-        icon: "Waves"
+        icon: "Waves",
+        description: "Piscinas, espaços gourmet, quadra, playground, pet place e áreas de convivência para a rotina da família."
       },
       {
         title: "A 15 Min do Plano Piloto",
-        icon: "MapPin"
+        icon: "MapPin",
+        description: "Localização estratégica em Sobradinho, com acesso facilitado pela BR-020 e conexão rápida com Brasília."
       },
       {
         title: "Entrada Facilitada",
-        icon: "DollarSign"
+        icon: "DollarSign",
+        description: "Condições comerciais sob consulta para você planejar a compra com mais tranquilidade."
       }
     ],
     units: [
@@ -27,7 +30,9 @@ export const condominiumData = {
         bedrooms: 2,
         bathrooms: 2,
         price: "Consulte",
-        image: "/images/planta-2-quartos.jpg"
+        image: "/images/planta-2-quartos.jpg",
+        highlight: "Ideal para quem quer sair do aluguel com conforto, suíte e varanda gourmet.",
+        whatsappMessage: "Olá Renato! Vim pelo site e quero simular a planta de 2 quartos do Alto Sobradinho."
       },
       {
         id: 2,
@@ -36,7 +41,9 @@ export const condominiumData = {
         bedrooms: 3,
         bathrooms: 2,
         price: "Consulte",
-        image: "/images/planta-3-quartos.jpg"
+        image: "/images/planta-3-quartos.jpg",
+        highlight: "Mais espaço para a família, com suíte, varanda gourmet e planta bem distribuída.",
+        whatsappMessage: "Olá Renato! Vim pelo site e quero simular a planta de 3 quartos do Alto Sobradinho."
       }
     ]
   },
@@ -153,7 +160,7 @@ export const condominiumData = {
         phone: "5561999886578",
         formattedPhone: "(61) 9 9988-6578",
         image: "/images/consultor-rosto.jpg",
-        defaultMessage: "Olá Renato! Gostaria de saber mais sobre o Alto Sobradinho."
+        defaultMessage: "Olá Renato! Vim pelo site e gostaria de receber as condições do Alto Sobradinho."
       }
     ],
     main: {
@@ -161,7 +168,7 @@ export const condominiumData = {
       role: "Consultor Imobiliário",
       phone: "5561999886578",
       formattedPhone: "(61) 9 9988-6578",
-      defaultMessage: "Olá! Gostaria de saber mais sobre o Alto Sobradinho."
+      defaultMessage: "Olá Renato! Vim pelo site e gostaria de receber as condições do Alto Sobradinho."
     }
   }
 };

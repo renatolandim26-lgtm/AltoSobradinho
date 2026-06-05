@@ -13,7 +13,7 @@ export default function Gallery() {
     { key: "empreendimento", label: "Empreendimento" }
   ];
 
-  const currentImages = gallery[activeCategory];
+  const currentImages = gallery[activeCategory] as Array<{ title: string; image: string; description?: string }>;
 
   return (
     <section id="galeria" className="py-20 bg-white">

@@ -1,67 +1,91 @@
-import { MessageCircle } from "lucide-react";
+import { Banknote, CalendarCheck, ChevronDown, MapPin, MessageCircle, Waves } from "lucide-react";
 import { condominiumData } from "@/lib/data";
+
+const benefits = [
+  { icon: Waves, label: "Lazer de resort" },
+  { icon: MapPin, label: "A 15 min do Plano Piloto" },
+  { icon: Banknote, label: "Entrada facilitada" }
+];
 
 export default function Hero() {
   const { contact, main } = condominiumData;
-  const whatsappUrl = `https://wa.me/${contact.main.phone}?text=${encodeURIComponent(contact.main.defaultMessage)}`;
+  const whatsappUrl = `https://wa.me/${contact.main.phone}?text=${encodeURIComponent(
+    "Olá Renato! Vim pelo site do Alto Sobradinho e quero receber as condições de 2 e 3 quartos."
+  )}`;
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-primary/5 to-white">
-      {/* Background Image */}
+    <section className="relative min-h-[calc(100vh-80px)] flex items-center justify-center overflow-hidden bg-primary text-white">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `url('/images/1000053037.jpg')`,
+          backgroundImage: "url('/images/empreendimento-perspectiva-aerea.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}
       >
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#06172d]/75 via-[#0b284d]/65 to-[#06172d]/85" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white max-w-4xl">
-        {/* Logo/Brand */}
-        <div className="mb-8">
-          <p className="text-sm font-semibold uppercase tracking-widest mb-4 text-blue-100">Riva Incorporadora</p>
+      <div className="relative z-10 container mx-auto px-4 py-16 md:py-24 text-center">
+        <div className="mx-auto max-w-5xl">
+          <p className="mb-5 text-xs md:text-sm font-bold uppercase tracking-[0.42em] text-blue-100">
+            Riva Incorporadora
+          </p>
+
+          <h1 className="mx-auto max-w-5xl text-4xl sm:text-5xl md:text-7xl font-light leading-[0.98] tracking-tight drop-shadow-lg" style={{ fontFamily: "var(--font-sans)" }}>
+            {main.tagline}
+          </h1>
+
+          <p className="mx-auto mt-6 max-w-3xl text-lg sm:text-xl md:text-2xl font-semibold text-blue-50 drop-shadow-sm">
+            {main.description}
+          </p>
+
+          <div className="mx-auto mt-9 flex max-w-4xl flex-col gap-3 rounded-3xl bg-[#082a4e]/88 p-3 shadow-2xl ring-1 ring-white/15 backdrop-blur md:flex-row md:items-center md:justify-center md:rounded-full md:px-6 md:py-4">
+            {benefits.map((benefit, index) => {
+              const Icon = benefit.icon;
+              return (
+                <div
+                  key={benefit.label}
+                  className={`flex items-center justify-center gap-3 px-4 py-2 text-sm font-bold uppercase tracking-wide text-white ${
+                    index > 0 ? "md:border-l md:border-white/25" : ""
+                  }`}
+                >
+                  <Icon size={22} strokeWidth={1.8} className="text-blue-100" />
+                  <span>{benefit.label}</span>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex w-full items-center justify-center gap-3 rounded-full bg-white px-8 py-4 text-base font-extrabold text-primary shadow-xl transition-all hover:-translate-y-0.5 hover:bg-blue-50 hover:shadow-2xl active:scale-95 sm:w-auto"
+            >
+              <MessageCircle size={22} />
+              Receber condições no WhatsApp
+            </a>
+
+            <a
+              href="#plantas"
+              className="inline-flex w-full items-center justify-center gap-3 rounded-full border border-white/35 bg-white/10 px-8 py-4 text-base font-bold text-white backdrop-blur transition-all hover:bg-white/20 active:scale-95 sm:w-auto"
+            >
+              <CalendarCheck size={22} />
+              Ver plantas de 2 e 3 quartos
+            </a>
+          </div>
+
+          <a
+            href="#sobre"
+            className="mx-auto mt-10 inline-flex items-center gap-2 text-sm font-semibold text-blue-100 transition hover:text-white"
+            aria-label="Ver mais informações sobre o Alto Sobradinho"
+          >
+            Conheça o empreendimento
+            <ChevronDown size={18} />
+          </a>
         </div>
-
-        {/* Main Headline */}
-        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 leading-tight drop-shadow-lg">
-          {main.tagline}
-        </h1>
-
-        {/* Subheadline */}
-        <p className="text-xl sm:text-2xl mb-8 text-gray-100 drop-shadow-md font-semibold">
-          {main.description}
-        </p>
-
-        {/* Benefits Bar */}
-        <div className="bg-primary/90 backdrop-blur-sm rounded-full px-6 py-4 mb-12 inline-flex items-center gap-8 text-white text-sm sm:text-base font-semibold flex-wrap justify-center">
-          <div className="flex items-center gap-2">
-            <span className="text-lg">🏊</span>
-            <span>Lazer de Resort</span>
-          </div>
-          <div className="hidden sm:flex items-center gap-2 border-l border-white/30 pl-8">
-            <span className="text-lg">📍</span>
-            <span>15 Min do Plano Piloto</span>
-          </div>
-          <div className="hidden md:flex items-center gap-2 border-l border-white/30 pl-8">
-            <span className="text-lg">💰</span>
-            <span>Entrada Facilitada</span>
-          </div>
-        </div>
-
-        {/* CTA Button */}
-        <a
-          href={whatsappUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-3 bg-white text-primary px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl active:scale-95"
-        >
-          <MessageCircle size={24} />
-          <span>Saiba Mais</span>
-        </a>
       </div>
     </section>
   );
