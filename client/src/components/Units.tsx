@@ -1,4 +1,4 @@
-import { Bath, BedDouble, MessageCircle, Ruler } from "lucide-react";
+import { Bath, BedDouble, MessageCircle, Ruler, Home } from "lucide-react";
 import { condominiumData } from "@/lib/data";
 
 export default function Units() {
@@ -16,7 +16,7 @@ export default function Units() {
           </p>
         </div>
 
-        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 md:grid-cols-3">
           {units.map((unit) => {
             const whatsappUrl = `https://wa.me/${contact.main.phone}?text=${encodeURIComponent(unit.whatsappMessage)}`;
 
@@ -53,9 +53,17 @@ export default function Units() {
                       <p className="font-extrabold text-primary">{unit.area}</p>
                     </div>
                     <div className="rounded-2xl bg-blue-50 p-4">
-                      <BedDouble className="mx-auto mb-2 text-primary" size={22} />
-                      <p className="text-xs font-semibold uppercase text-foreground/55">Quartos</p>
-                      <p className="font-extrabold text-primary">{unit.bedrooms}</p>
+                      {unit.name.toLowerCase().includes("cobertura") ? (
+                        <Home className="mx-auto mb-2 text-primary" size={22} />
+                      ) : (
+                        <BedDouble className="mx-auto mb-2 text-primary" size={22} />
+                      )}
+                      <p className="text-xs font-semibold uppercase text-foreground/55">
+                        {unit.name.toLowerCase().includes("cobertura") ? "Tipo" : "Quartos"}
+                      </p>
+                      <p className="font-extrabold text-primary">
+                        {unit.name.toLowerCase().includes("cobertura") ? "Cobertura" : unit.bedrooms}
+                      </p>
                     </div>
                     <div className="rounded-2xl bg-blue-50 p-4">
                       <Bath className="mx-auto mb-2 text-primary" size={22} />

@@ -44,6 +44,17 @@ export const condominiumData = {
         image: "/images/planta-3-quartos.jpg",
         highlight: "Mais espaço para a família, com suíte, varanda gourmet e planta bem distribuída.",
         whatsappMessage: "Olá Renato! Vim pelo site e quero simular a planta de 3 quartos do Alto Sobradinho."
+      },
+      {
+        id: 3,
+        name: "Cobertura Linear",
+        area: "132,45 m²",
+        bedrooms: 3,
+        bathrooms: 3,
+        price: "Consulte",
+        image: "/images/planta-cobertura.jpg",
+        highlight: "O topo do conforto: cobertura linear com amplo terraço privativo e vista panorâmica.",
+        whatsappMessage: "Olá Renato! Vim pelo site e quero simular a cobertura do Alto Sobradinho."
       }
     ]
   },

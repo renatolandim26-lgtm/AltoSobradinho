@@ -205,6 +205,7 @@ export default function ContactSection() {
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
+                      <SelectItem value="imediato">Imediato</SelectItem>
                       <SelectItem value="ate-3-meses">Até 3 meses</SelectItem>
                       <SelectItem value="ate-6-meses">Até 6 meses</SelectItem>
                       <SelectItem value="mais-de-6-meses">Mais de 6 meses</SelectItem>
