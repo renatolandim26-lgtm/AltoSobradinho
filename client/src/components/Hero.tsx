@@ -10,7 +10,7 @@ const benefits = [
 export default function Hero() {
   const { contact, main } = condominiumData;
   const whatsappUrl = `https://wa.me/${contact.main.phone}?text=${encodeURIComponent(
-    "Olá Renato! Vim pelo site do Alto Sobradinho e quero receber as condições de 2 e 3 quartos."
+    "Olá Renato! Vim pelo site do Alto Sobradinho e quero receber mais informações."
   )}`;
 
   return (
