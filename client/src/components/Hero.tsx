@@ -32,13 +32,9 @@ export default function Hero() {
             Riva Incorporadora
           </p>
 
-          <h1 className="mx-auto max-w-5xl text-4xl sm:text-5xl md:text-7xl font-light leading-[0.98] tracking-tight drop-shadow-lg" style={{ fontFamily: "var(--font-sans)" }}>
+          <h1 className="mx-auto max-w-5xl text-4xl sm:text-5xl md:text-7xl font-light leading-[0.98] tracking-tight drop-shadow-lg mb-12" style={{ fontFamily: "var(--font-sans)" }}>
             {main.tagline}
           </h1>
-
-          <p className="mx-auto mt-6 max-w-3xl text-lg sm:text-xl md:text-2xl font-semibold text-blue-50 drop-shadow-sm">
-            {main.description}
-          </p>
 
           <div className="mx-auto mt-9 flex max-w-4xl flex-col gap-3 rounded-3xl bg-[#082a4e]/88 p-3 shadow-2xl ring-1 ring-white/15 backdrop-blur md:flex-row md:items-center md:justify-center md:rounded-full md:px-6 md:py-4">
             {benefits.map((benefit, index) => {
@@ -73,7 +69,7 @@ export default function Hero() {
               className="inline-flex w-full items-center justify-center gap-3 rounded-full border border-white/35 bg-white/10 px-8 py-4 text-base font-bold text-white backdrop-blur transition-all hover:bg-white/20 active:scale-95 sm:w-auto"
             >
               <CalendarCheck size={22} />
-              Ver plantas de 2 e 3 quartos
+              Ver plantas
             </a>
           </div>
 
