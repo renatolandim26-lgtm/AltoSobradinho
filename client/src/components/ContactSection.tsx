@@ -1,4 +1,4 @@
-import { MessageCircle, Phone, ShieldCheck } from "lucide-react";
+import { MessageCircle, Phone, Award, Handshake, Key } from "lucide-react";
 import { useState } from "react";
 import PrivacyPolicyModal from "./PrivacyPolicyModal";
 import { Button } from "@/components/ui/button";
@@ -88,52 +88,69 @@ export default function ContactSection() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[0.85fr_1.15fr]">
-            <aside className="rounded-3xl border border-blue-100 bg-white p-8 text-center shadow-lg">
-              <div className="mx-auto mb-6 h-32 w-32 overflow-hidden rounded-full bg-gradient-to-br from-primary/20 to-primary/5 ring-8 ring-blue-50">
-                {consultant.image ? (
-                  <img src={consultant.image} alt={consultant.name} className="h-full w-full object-cover" />
-                ) : (
-                  <div className="flex h-full w-full items-center justify-center">
-                    <Phone size={48} className="text-primary/50" />
-                  </div>
-                )}
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-[0.9fr_1.1fr] items-start">
+            {/* Digital Business Card Style */}
+            <aside className="relative overflow-hidden rounded-[2rem] bg-white shadow-2xl border border-slate-100">
+              {/* Card Header/Background */}
+              <div className="h-32 bg-gradient-to-r from-slate-50 to-blue-50 flex items-center justify-end px-8">
+                <img src="/images/logo-riva-final.png" alt="Riva Incorporadora" className="h-10 opacity-80" />
               </div>
 
-              <h3 className="mb-2 text-2xl font-bold text-primary">{consultant.name}</h3>
-              <p className="mb-6 font-semibold text-foreground/70">{consultant.role}</p>
-
-              <div className="mb-7 rounded-2xl bg-blue-50 p-5 text-left">
-                <div className="mb-3 flex items-center gap-2 text-primary">
-                  <ShieldCheck size={20} />
-                  <span className="font-extrabold">Atendimento sem compromisso</span>
+              <div className="px-8 pb-8 -mt-16 text-center">
+                {/* Profile Image with Border */}
+                <div className="mx-auto mb-6 h-40 w-40 overflow-hidden rounded-full border-4 border-white shadow-xl ring-1 ring-slate-200">
+                  <img 
+                    src={consultant.image} 
+                    alt={consultant.name} 
+                    className="h-full w-full object-cover scale-110" 
+                  />
                 </div>
-                <p className="text-sm leading-relaxed text-foreground/70">
-                  Você fala direto comigo para entender plantas, disponibilidade, entrada facilitada e o melhor caminho para comprar com segurança.
-                </p>
-              </div>
 
-              <div className="grid gap-3">
+                {/* Name and Title */}
+                <h3 className="text-4xl font-serif font-bold text-[#0a1d37] tracking-tight mb-1">
+                  {consultant.name}
+                </h3>
+                <p className="text-sm font-bold uppercase tracking-[0.2em] text-slate-500 mb-8">
+                  {consultant.role}
+                </p>
+
+                {/* Main Action Button */}
                 <a
                   href={`https://wa.me/${consultant.phone}?text=${encodeURIComponent(consultant.defaultMessage)}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex w-full items-center justify-center gap-2 rounded-full bg-[#1f9d55] py-4 font-extrabold text-white transition hover:bg-[#18864a] active:scale-95"
+                  className="group flex w-full items-center justify-center gap-3 rounded-2xl bg-white border-2 border-slate-100 py-5 px-6 shadow-sm transition-all hover:shadow-md hover:border-green-100 active:scale-95"
                 >
-                  <MessageCircle size={20} />
-                  Chamar no WhatsApp
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#25D366] text-white">
+                    <MessageCircle size={24} />
+                  </div>
+                  <div className="text-left">
+                    <p className="text-xs font-bold uppercase text-slate-400 leading-none mb-1">Fale comigo no</p>
+                    <p className="text-xl font-bold text-slate-800 leading-none">WhatsApp</p>
+                  </div>
                 </a>
+              </div>
 
-                <a
-                  href={`tel:${consultant.phone}`}
-                  className="flex w-full items-center justify-center gap-2 rounded-full border border-primary/20 bg-white py-4 font-extrabold text-primary transition hover:bg-blue-50 active:scale-95"
-                >
-                  <Phone size={20} />
-                  Ligar agora
-                </a>
+              {/* Bottom Info Bar */}
+              <div className="bg-[#0a1d37] p-6 text-white">
+                <div className="grid grid-cols-3 gap-4">
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <Award size={20} className="text-blue-200" />
+                    <p className="text-[10px] font-bold uppercase leading-tight tracking-wider opacity-90">Especialista em Imóveis</p>
+                  </div>
+                  <div className="flex flex-col items-center text-center gap-2 border-x border-white/10">
+                    <Handshake size={20} className="text-blue-200" />
+                    <p className="text-[10px] font-bold uppercase leading-tight tracking-wider opacity-90">Atendimento Personalizado</p>
+                  </div>
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <Key size={20} className="text-blue-200" />
+                    <p className="text-[10px] font-bold uppercase leading-tight tracking-wider opacity-90">As Melhores Oportunidades</p>
+                  </div>
+                </div>
               </div>
             </aside>
 
+            {/* Form Section */}
             <div className="rounded-3xl border border-blue-100 bg-white p-6 shadow-lg md:p-8">
               <form onSubmit={handleSubmit} className="grid gap-5">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
