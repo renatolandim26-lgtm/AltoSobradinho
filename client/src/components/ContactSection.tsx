@@ -1,5 +1,6 @@
-import { MessageCircle, Phone, Award, Handshake, Key } from "lucide-react";
+import { MessageCircle, Phone, Award, Handshake, Key, X } from "lucide-react";
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import PrivacyPolicyModal from "./PrivacyPolicyModal";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -9,7 +10,8 @@ import { condominiumData } from "@/lib/data";
 
 export default function ContactSection() {
   const { contact } = condominiumData;
-  const consultant = contact.consultants[0];
+  const [selectedConsultant, setSelectedConsultant] = useState<number | null>(null);
+  const [showConsultantSelector, setShowConsultantSelector] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -50,11 +52,18 @@ export default function ContactSection() {
 
       if (response.ok) {
         toast.success("Cadastro realizado. Vou te chamar no WhatsApp.");
-        const message = `Olá Renato! Meu nome é ${formData.name}. Vim pelo site do Alto Sobradinho. Tenho interesse na planta: ${formData.plan}, objetivo: ${formData.interest}, prazo: ${formData.timeline}, entrada/FGTS: ${formData.downPayment}.`;
+        
+        // Se houver consultor selecionado, usa ele. Senão, abre o seletor
+        if (selectedConsultant !== null) {
+          const consultant = contact.consultants[selectedConsultant];
+          const message = `Olá ${consultant.name}! Meu nome é ${formData.name}. Vim pelo site do Alto Sobradinho. Tenho interesse na planta: ${formData.plan}, objetivo: ${formData.interest}, prazo: ${formData.timeline}, entrada/FGTS: ${formData.downPayment}.`;
 
-        setTimeout(() => {
-          window.open(`https://wa.me/${contact.main.phone}?text=${encodeURIComponent(message)}`, "_blank");
-        }, 900);
+          setTimeout(() => {
+            window.open(`https://wa.me/${consultant.phone}?text=${encodeURIComponent(message)}`, "_blank");
+          }, 900);
+        } else {
+          setShowConsultantSelector(true);
+        }
 
         setFormData({
           name: "",
@@ -76,6 +85,13 @@ export default function ContactSection() {
     }
   };
 
+  const handleConsultantClick = (consultantIndex: number) => {
+    const consultant = contact.consultants[consultantIndex];
+    const message = `Olá ${consultant.name}! Vim pelo site do Alto Sobradinho e quero receber uma simulação.`;
+    window.open(`https://wa.me/${consultant.phone}?text=${encodeURIComponent(message)}`, "_blank");
+    setShowConsultantSelector(false);
+  };
+
   return (
     <section id="contato" className="bg-gradient-to-b from-blue-50 to-white py-20">
       <div className="container mx-auto px-4">
@@ -89,20 +105,78 @@ export default function ContactSection() {
           </div>
 
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-[0.9fr_1.1fr] items-start">
-            {/* Digital Business Card Image */}
+            {/* Digital Business Card Image - Team Card */}
             <aside className="relative overflow-hidden rounded-[2rem] shadow-2xl transition-transform hover:scale-[1.02]">
-              <a
-                href={`https://wa.me/${consultant.phone}?text=${encodeURIComponent(consultant.defaultMessage)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block"
+              <button
+                onClick={() => setShowConsultantSelector(!showConsultantSelector)}
+                className="block w-full cursor-pointer"
               >
                 <img 
-                  src="/images/cartao-virtual-renato.png" 
-                  alt="Cartão de Visita Renato Landim - Riva Incorporadora" 
+                  src="/images/team-card.png" 
+                  alt="Cartão de Visita - Davyd Duarte & Renato Landim - Riva Incorporadora" 
                   className="w-full h-auto"
                 />
-              </a>
+              </button>
+
+              {/* Consultant Selector Modal */}
+              <AnimatePresence>
+                {showConsultantSelector && (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
+                    onClick={() => setShowConsultantSelector(false)}
+                  >
+                    <motion.div
+                      initial={{ scale: 0.9, y: 20 }}
+                      animate={{ scale: 1, y: 0 }}
+                      exit={{ scale: 0.9, y: 20 }}
+                      onClick={(e) => e.stopPropagation()}
+                      className="w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-2xl"
+                    >
+                      <div className="bg-[#1f9d55] p-6 text-white">
+                        <div className="flex items-center justify-between">
+                          <h3 className="text-lg font-bold">Escolha seu consultor</h3>
+                          <button 
+                            onClick={() => setShowConsultantSelector(false)}
+                            className="rounded-full p-1 transition hover:bg-white/20"
+                          >
+                            <X size={20} />
+                          </button>
+                        </div>
+                        <p className="text-sm opacity-90">Selecione com quem deseja falar</p>
+                      </div>
+
+                      <div className="flex flex-col p-4">
+                        {contact.consultants.map((consultant, index) => (
+                          <button
+                            key={consultant.name}
+                            onClick={() => handleConsultantClick(index)}
+                            className="flex items-center gap-4 rounded-xl p-4 transition hover:bg-gray-50 active:scale-[0.98]"
+                          >
+                            <div className="h-16 w-16 overflow-hidden rounded-full border-2 border-[#1f9d55]/20 bg-gray-100 flex-shrink-0">
+                              <img 
+                                src={consultant.image} 
+                                alt={consultant.name}
+                                className="h-full w-full object-cover"
+                              />
+                            </div>
+                            <div className="flex-1 text-left">
+                              <h4 className="text-base font-bold text-gray-800">{consultant.name}</h4>
+                              <p className="text-xs text-gray-500 uppercase tracking-wider">{consultant.role}</p>
+                              <p className="text-xs text-[#1f9d55] font-semibold mt-1">{consultant.formattedPhone}</p>
+                            </div>
+                            <div className="rounded-full bg-[#1f9d55]/10 p-2 text-[#1f9d55] flex-shrink-0">
+                              <MessageCircle size={18} />
+                            </div>
+                          </button>
+                        ))}
+                      </div>
+                    </motion.div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </aside>
 
             {/* Form Section */}
@@ -216,7 +290,7 @@ export default function ContactSection() {
                     >
                       Política de Privacidade
                     </button>{" "}
-                    e está ciente de que seus dados de contato serão compartilhados com o consultor Renato Landim e a imobiliária para fins de atendimento personalizado.
+                    e está ciente de que seus dados de contato serão compartilhados com os consultores Davyd Duarte e Renato Landim e a imobiliária para fins de atendimento personalizado.
                   </p>
                 </div>
 

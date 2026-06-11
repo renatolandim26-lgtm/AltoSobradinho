@@ -176,8 +176,8 @@ export const condominiumData = {
       {
         name: "Davyd Duarte",
         role: "Consultor Imobiliário",
-        phone: "5561999886578", // Mantendo o mesmo telefone conforme instruções anteriores ou use um específico se houver
-        formattedPhone: "(61) 9 9988-6578",
+        phone: "5561993707482",
+        formattedPhone: "(61) 9 9370-7482",
         image: "/images/davyd-duarte.jpg",
         defaultMessage: "Olá Davyd! Vim pelo site do Alto Sobradinho e quero receber uma simulação."
       }
