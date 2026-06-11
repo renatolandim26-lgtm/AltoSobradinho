@@ -1,5 +1,5 @@
 import { Instagram, Facebook, MapPin, Phone } from "lucide-react";
-// Logo removido - Solidus
+
 import { condominiumData } from "@/lib/data";
 
 export default function Footer() {
