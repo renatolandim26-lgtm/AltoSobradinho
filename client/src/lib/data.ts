@@ -88,35 +88,23 @@ export const condominiumData = {
     enxoval: [
       {
         title: "Piscina Adulto",
-        image: "/images/1000040602.jpg"
+        image: "/images/1000053007.jpg"
       },
       {
         title: "Deck Molhado e Solarium",
         image: "/images/1000053023.jpg"
       },
       {
-        title: "Academia Equipada",
-        image: "/images/lazer-academia-interna.jpg"
-      },
-      {
-        title: "Espaço Gourmet",
-        image: "/images/lazer-espaco-gourmet.jpg"
-      },
-      {
         title: "Salão de Jogos",
         image: "/images/1000041386.jpg"
       },
       {
-        title: "Quadra Poliesportiva",
-        image: "/images/lazer-quadra-poliesportiva.jpg"
-      },
-      {
-        title: "Playground",
-        image: "/images/lazer-playground.jpg"
+        title: "Academia ao Ar Livre",
+        image: "/images/1000053041.jpg"
       },
       {
         title: "Pet Place",
-        image: "/images/lazer-pet-place.jpg"
+        image: "/images/1000053043.jpg"
       },
       {
         title: "Brinquedoteca",
@@ -124,23 +112,36 @@ export const condominiumData = {
       },
       {
         title: "Espaço de Convivência",
-        image: "/images/lazer-area-comum.jpg"
+        image: "/images/1000053037.jpg"
       },
       {
-        title: "Academia ao Ar Livre",
-        image: "/images/1000053041.jpg"
+        title: "Área de Lazer Gourmet",
+        image: "/images/1000040616.jpg"
+      },
+      {
+        title: "Perspectiva Geral do Lazer",
+        image: "/images/1000044023.jpg"
+      },
+      {
+        title: "Área de Convivência Noturna",
+        image: "/images/1000051030.jpg"
       }
     ],
     plantas: [
       {
         title: "Planta 2 Quartos com Varanda (59,86m²)",
         description: "Apartamento inteligente com suíte, varanda, piso laminado nos quartos e porcelanato nos banheiros, sala e cozinha. Equipado com tomada USB e fechadura eletrônica.",
-        image: "/images/planta-2-quartos-tipo.jpg"
+        image: "/images/1000053031.jpg"
       },
       {
         title: "Planta 3 Quartos com Varanda (72,83m²)",
         description: "Espaço e conforto para sua família. Planta com suíte, varanda gourmet, acabamento premium e tecnologia integrada com tomadas USB e fechadura eletrônica.",
-        image: "/images/planta-3-quartos-tipo.jpg"
+        image: "/images/1000053033.jpg"
+      },
+      {
+        title: "Perspectiva Humanizada - Sala",
+        description: "Visualize como será sua sala de estar no Alto Sobradinho com acabamento premium e conforto.",
+        image: "/images/1000053029.jpg"
       }
     ],
     empreendimento: [
