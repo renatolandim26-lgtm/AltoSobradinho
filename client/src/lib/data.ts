@@ -87,10 +87,6 @@ export const condominiumData = {
     ],
     enxoval: [
       {
-        title: "Piscina Adulto",
-        image: "/images/1000053007.jpg"
-      },
-      {
         title: "Deck Molhado e Solarium",
         image: "/images/1000053023.jpg"
       },
@@ -119,14 +115,10 @@ export const condominiumData = {
         image: "/images/1000040616.jpg"
       },
       {
-        title: "Perspectiva Geral do Lazer",
-        image: "/images/1000044023.jpg"
-      },
-      {
         title: "Academia Premium",
         image: "/images/academia-premium.jpg"
       }
-    ],
+    },
     plantas: [
       {
         title: "Planta 2 Quartos com Varanda (59,86m²)",
