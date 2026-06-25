@@ -118,7 +118,7 @@ export const condominiumData = {
         title: "Academia Premium",
         image: "/images/academia-premium.jpg"
       }
-    },
+    ],
     plantas: [
       {
         title: "Planta 2 Quartos com Varanda (59,86m²)",
