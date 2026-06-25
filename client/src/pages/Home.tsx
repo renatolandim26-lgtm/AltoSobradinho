@@ -7,7 +7,7 @@ import Units from "@/components/Units";
 import InterestMap from "@/components/InterestMap";
 import OtherDevelopments from "@/components/OtherDevelopments";
 import Testimonials from "@/components/Testimonials";
-import FAQ from "@/components/FAQ";
+
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
@@ -23,7 +23,7 @@ export default function Home() {
         <Amenities />
         <Units />
         <Testimonials />
-        <FAQ />
+
         <InterestMap />
         <OtherDevelopments />
         <ContactSection />
