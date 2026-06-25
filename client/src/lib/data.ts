@@ -1,7 +1,7 @@
 export const condominiumData = {
   main: {
     name: "Alto Sobradinho",
-    tagline: "O Primeiro Condomínio Vertical de Sobradinho",
+    tagline: "O Primeiro Condomínio Vertical de Sobradinho - V2",
     description: "2 e 3 Quartos com Suíte e Varanda Gourmet",
     location: "Sobradinho, DF - Às margens da BR-020",
     status: "Em Construção",
