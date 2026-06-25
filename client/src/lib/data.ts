@@ -188,6 +188,7 @@ export const condominiumData = {
       role: "Consultor Imobiliário",
       phone: "5561999886578",
       formattedPhone: "(61) 9 9988-6578",
+      image: "/images/consultor-rosto.jpg",
       defaultMessage: "Olá Renato! Vim pelo site do Alto Sobradinho e quero receber uma simulação."
     }
   }
