@@ -123,8 +123,8 @@ export const condominiumData = {
         image: "/images/1000044023.jpg"
       },
       {
-        title: "Área de Convivência Noturna",
-        image: "/images/1000051030.jpg"
+        title: "Academia Premium",
+        image: "/images/academia-premium.jpg"
       }
     ],
     plantas: [
